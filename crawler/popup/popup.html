@@ -1,0 +1,93 @@
+<!-- 
+  1.输入baseURL,确认之后将该数据将直接保存storage中
+  2.StartingUrl的insert button的触发后将将目前的网址传给storage
+  3.右键菜单可以快速将你所选中的selector与element相关联
+
+
+
+
+ -->
+<!DOCTYPE html>
+<html lang="zh_CN">
+
+<head>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <!-- <link rel="stylesheet" type="text/css" href="./popup.css"\> -->
+  <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" defer="TRUE" src="./popup.js">    </script>
+
+
+  <table width="400px" height="500px" cellspacing="10px" border=1 cellspacing="pixels">
+    <!-- baseURL -->
+    <tr height="30px">
+      <td width="20px">baseURL </td>
+      <td>
+        <input type="text" value="baseURL" id="baseURLTEXT" width="150px" />
+        <input type="button" value="insert" class="aButton" id="baseURLInsert" />
+      </td>
+    </tr>
+    <!-- StartingURLs -->
+    <tr height="40px">
+      <td width="20px">StartingURLs</td>
+      <td>
+        <select id="StartingURLsSelect">
+
+        </select>
+
+        <button class="aButton" id="StartingURLsInsert">insert</button>
+        <button class="aButton" id="StartingURLsDelete">delete</button>
+      </td>
+    </tr>
+    <tr height="40px">
+      <td width="20px">
+        element
+      </td>
+      <td>
+        <!-- element区域 -->
+        <select id="elementsSelect">
+          <!-- <option>
+                  element
+                </option> -->
+        </select>
+        <input type="text" id="elementsTEXT" />
+        <input type="button" value="insert" class="aButton" id="elementsInsert" />
+        <input type="button" value="delete" class="aButton" id="elementsDelete" />
+      </td>
+    </tr>
+    <!-- selector区域 -->
+    <tr height="40px">
+      <td width="20px">
+        selector
+      </td>
+      <td>
+        <select id="selectorsSelect">
+          <!-- <option >
+                selector
+              </option> -->
+        </select>
+        <input type="text" id="selectorsTEXT" />
+        <input type="button" value="insert" class="aButton" id="selectorsInsert" />
+        <input type="button" value="delete" class="aButton" id="selectorsDelete" />
+      </td>
+    </tr>
+
+    <tr height="200px">
+      <td colspan="2">
+        <textarea rows="20" cols="50" id="text"></textarea>
+
+      </td>
+    </tr>
+    <tr height="10px">
+      <td><input type="button" value="add" id="addCode" /></td>
+      <td><input type="submit" id="finish" /><input type="button" id="lastFinish" value="last"/></td>
+    </tr>
+
+  </table>
+
+
+</body>
+
+</html>

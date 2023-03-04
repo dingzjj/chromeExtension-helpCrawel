@@ -1,0 +1,18 @@
+package production
+
+import (
+	"megaCrawler/crawlers"
+
+	"github.com/gocolly/colly/v2"
+)
+
+func init() {
+	w := crawlers.Register("#baseURLInStorageTitle#", "#baseURLInStorageTitle#", "#baseURLInStorage#")
+
+	w.SetStartingURLs([]string{
+		#dataStartingURLsInStorage#
+	})
+    
+    #element#
+
+}
